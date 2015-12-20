@@ -38,6 +38,9 @@ tw.stream('statuses/filter', {'locations': '-180,-90,180,90'}, function(stream) 
         //'time': data.create_at
       });
       twCount++;
+      if(twCount = 100) {
+      	cnosole.log("処理ツイートが100件に達しました");
+      }
     }
   });
   stream.on('error', function (response) {
