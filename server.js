@@ -39,9 +39,9 @@ tw.stream('statuses/filter', {'locations': '-180,-90,180,90'}, function(stream) 
       });
       twCount++;
     }
-  if(twCount = 10000) {
-        console.log("処理ツイートが10000件に達しました");
-      }
+    if(twCount == 10000) {
+      console.log("処理ツイートが10000件に達しました");
+    }
   });
   stream.on('error', function (response) {
     console.log(response);
