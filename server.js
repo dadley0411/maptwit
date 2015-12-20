@@ -39,7 +39,7 @@ tw.stream('statuses/filter', {'locations': '-180,-90,180,90'}, function(stream) 
       });
       twCount++;
       if(twCount = 100) {
-      	cnosole.log("処理ツイートが100件に達しました");
+      	console.log("処理ツイートが100件に達しました");
       }
     }
   });
