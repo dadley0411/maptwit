@@ -38,8 +38,8 @@ tw.stream('statuses/filter', {'locations': '-180,-90,180,90'}, function(stream) 
         //'time': data.create_at
       });
       twCount++;
-      if(twCount = 100) {
-      	console.log("処理ツイートが100件に達しました");
+      if(twCount = 10000) {
+      	console.log("処理ツイートが10000件に達しました");
       }
     }
   });
