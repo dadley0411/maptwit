@@ -62,7 +62,7 @@ $(document).ready(function() {
     markers.push(marker); 
     //fluster.addMarker(marker);
 
-    Cluster();
+    //Cluster();
     //Cluster2();
 
 
